@@ -1,0 +1,11 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: getting-started
+  namespace: wego-system
+  labels:
+    weave-gitops.weave.works/app-identifier: wego-b353d2b13f0d0c113929ed8866ddc39f
+spec:
+  path: ./
+  url: ssh://git@github.com/D3nn/getting-started.git
